@@ -1,24 +1,24 @@
-##Patient Call Tracker
+# Patient Call Tracker
 
-#Manual
+## Manual
 •	Browser refresh or "refresh" button can be used to reload the page and update the charts.
 •	This is a Single Page Application.
 •	Basic CSS and JS are used.
 •	Flex box is used initially to make it simple and for future responsiveness.
 •	JS Canvas is used to draw charts.
 
-#Navigation:
+## Navigation:
 •	Refresh <a> tag refreshes the whole page.
 
-#Main Section:
+## Main Section:
 •	JS Canvas makes Radial Bar Chart drawing path based on the random number generated ranging from 0 to 28.
 •	The generated number is shown in the centre.
 
-#Stacked Bar Chart:
+## Stacked Bar Chart:
 •	JS Canvas makes 3 sets of 6 bar charts showing 6 colours on a single line. Each colour length is randomly drawn totalling the width of the section.
 •	The headings of each colour are also drawn from JS Canvas.
 
-#To Do
+## To Do
 
 •	Single digit in the centre of Radial chart can be aligned in centre.
 •	The gap between top sections and bottom section can be reduced.

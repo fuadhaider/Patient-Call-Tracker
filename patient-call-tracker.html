@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fuad Haider">
+    <link rel="stylesheet" href="style.css">
+    <title>Patient Call Tracker</title>
+  </head>
+  <body>
+    <nav id="navigation-section">
+      <figure id="logo-28b">
+        <img src="28b-logo.svg" alt="28b Logo">
+      </figure>
+      <section class="column">
+        <ul>
+          <li>Welcome,</li>
+          <li id="name">Andy Reppington</li>
+          <li><a style="display:block" onclick="loadPage()">Refresh</a></li>
+        </ul>
+      </section>
+      <section class="column">
+        <ul>
+          <li>Metrics</li>
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Detailing</a></li>
+        </ul>
+      </section>
+      <section class="column">
+        <ul>
+          <li>Information</li>
+          <li><a href="#">About profiles</a></li>
+          <li><a href="#">Detailing targets</a></li>
+        </ul>
+      </section>
+      <p id="version">v1.1.7</p>
+    </nav>
+    
+    <main id="main-section">
+      <section class="row">
+        <aside id="aside-section">
+          <h3>Next Call</h3>
+          <table>
+            <tr>
+              <th class="top-gap" rowspan="2" style="vertical-align:top">Date:</th>
+              <td class="top-gap">Tomorrow, 2:15 PM</td>
+            </tr>
+            <tr>
+              <td>9 October 2018</td>
+            </tr>
+            <tr>
+              <th class="top-gap" style="vertical-align:top">Account:</th>
+              <td class="top-gap">Dr. Clinton Ackerman</td>
+            </tr>
+            <tr>
+              <th rowspan="2" style="vertical-align:top">Specialty:</th>
+              <td>Respiratory therapist</td>
+            </tr>
+            <tr>
+              <td>Assistive therapy</td>
+            </tr>
+            <tr>
+              <th class="top-gap" style="vertical-align:top">Call objective:</th>
+              <td class="top-gap">Gain HCP agreement that effective maintenance therapy can
+                 increase patient retention</td>
+            </tr>
+            <tr>
+              <th class="top-gap" style="vertical-align:top">Pro tip:</th>
+              <td class="top-gap">Demonstrate our company's commitment to market leadership</td>
+            </tr>
+          </table>
+        </aside>
+        
+        <figure id="radial-bar-chart" class="bar-chart">
+          <h3>Calls completed this month</h3>
+          <canvas id="radial-canvas" >        
+            Your browser does not support the canvas element.
+          </canvas>
+        </figure>
+      </section>
+      
+      <figure id="stacked-bar-chart" class="bar-chart">
+        <h3>Key message breakdown by customer type (vs target)</h3>
+        <section id="indicators">
+          <span style="text-align:center">
+            <b style="font-size:30px;color:#1a8ddd">&#9830;
+            </b> Adherence</span>
+          <span>
+            <b style="font-size:30px;color:#35ddb3">&#9830;
+            </b> Combination therapy</span>
+          <span>
+            <b style="font-size:30px;color:#dddc61">&#9830;
+            </b> Dosing</span>
+          <span>
+            <b style="font-size:30px;color:#dd6844">&#9830;
+            </b> Guidelines</span>
+          <span>
+            <b style="font-size:30px;color:#8f71dd">&#9830;
+            </b> Safety</span>
+          <span>
+            <b style="font-size:30px;color:#dddddd">&#9830;
+            </b> Other</span>
+        </section>
+          
+        <canvas id="stacked-canvas">
+          Your browser does not support the HTML5 canvas tag.
+        </canvas>
+      </figure>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
